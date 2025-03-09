@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .profile-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+        .profile-content {
+            flex: 1;
+        }
+        .profile-content h1 {
+            font-size: 36px;
+            color: #00ff99;
+        }
+        .profile-content p {
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: unset;
+            margin: 10px 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background: #00ff99;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #009966;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #00ff99;
+            margin-right: 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .social-icons a {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: green
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="enhanced_zoomed_image.jpg" alt="Profile Picture" class="profile-image">
+        <div class="profile-content">
+            <h1>LYNN WANJIRU</h1>
+            <p>COMPUTER SCIENCE</p>
+            <p>Passionate about data science, analytics, and continuous learning. I thrive on solving problems, optimizing workflows, and turning data into meaningful insights. When I’m not crunching numbers, you’ll find me knitting, painting, dancing, or lost in a good book. Always eager to grow and take on new challenges.</p>
+            <div class="buttons">
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a> <!-- Facebook -->
+                <a href="#"><i class="fab fa-twitter"></i></a> <!-- Twitter -->
+                <a href="#"><i class="fab fa-instagram"></i></a> <!-- Instagram -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
